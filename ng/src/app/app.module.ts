@@ -2,21 +2,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { PublicModule } from './public/public.module';
-import { FeaturesModule } from './features/features.module';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module'; // Important, AppRouting no mi-manage
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [ ],
   imports: [
     BrowserModule,
-    PublicModule,
-    FeaturesModule,
-    AppRoutingModule
+    AppComponent,
+    AppRoutingModule  // Tokony AppRoutingModule irery no mi-route
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: []
 })
 export class AppModule { }
